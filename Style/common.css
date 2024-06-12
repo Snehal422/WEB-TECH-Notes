@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.container {
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid transparent;
+    color: black;
+}
+
+ h1,h3,h2{
+    line-height: 40px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+}
+li{
+    line-height: 40px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+p{
+    width: 70%;
+    margin: 10px auto;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+}
+table
+{
+    width: 80%;
+    border: 1px solid rgb(216, 174, 126);
+    margin: 10px auto;
+}
+table, th, td {
+    border: 1px solid rgb(216, 174, 126);
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+img{
+    width:90%;
+    height: 20%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.align-left{
+    text-align: left;
+}
+  .text-style{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: justify;
+
+  }

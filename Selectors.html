@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/common.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h2>CSS Selectors</h2>
+            <p>CSS selectors are used to &quot;find&quot; (or select) the HTML elements you want to
+                style.</p>
+            <p>We can divide CSS selectors into folowing categories:</p>
+            <ol class="center">
+                <li class="align-left">Simple Selectors</li>
+                <li class="align-left">Combinator Selectors</li>
+                <li class="align-left">Attribute Selectors</li>
+            </ol>
+            <!-------------------------------------Simple Selectors --------------------------------->
+            <h2>CSS Simple Selectors</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector Type</th>
+                        <th>Syntax</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Universal Selector</td>
+                        <td>*</td>
+                        <td>Selects all elements in the document</td>
+                        <td>* { margin: 0; }</td>
+                    </tr>
+                    <tr>
+                        <td>Type Selector</td>
+                        <td>element</td>
+                        <td>Selects all elements of the specified type</td>
+                        <td>p { color: blue; }</td>
+                    </tr>
+                    <tr>
+                        <td>Class Selector</td>
+                        <td>.class</td>
+                        <td>Selects all elements with the specified class</td>
+                        <td>.intro { font-size: 14px; }</td>
+                    </tr>
+                    <tr>
+                        <td>ID Selector</td>
+                        <td>#id</td>
+                        <td>Selects the element with the specified ID</td>
+                        <td>#header { background: yellow; }</td>
+                    </tr>
+                    <tr>
+                        <td>Attribute Selector</td>
+                        <td>[attribute]</td>
+                        <td>Selects elements with the specified attribute</td>
+                        <td>[type="text"] { width: 200px; }</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-------------------------------------Combinator Selectors --------------------------------->
+
+            <h2>CSS Combinator Selectors</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector Type</th>
+                        <th>Syntax</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Descendant Selector</td>
+                        <td>ancestor descendant</td>
+                        <td>Selects all descendants of the specified ancestor</td>
+                        <td>div p { color: red; }</td>
+                    </tr>
+                    <tr>
+                        <td>Child Selector</td>
+                        <td>parent > child</td>
+                        <td>Selects all direct children of the specified parent</td>
+                        <td>ul > li { list-style: none; }</td>
+                    </tr>
+                    <tr>
+                        <td>Adjacent Sibling Selector</td>
+                        <td>element + element</td>
+                        <td>Selects the element that is directly adjacent to the specified element</td>
+                        <td>h1 + p { margin-top: 0; }</td>
+                    </tr>
+                    <tr>
+                        <td>General Sibling Selector</td>
+                        <td>element ~ element</td>
+                        <td>Selects all siblings of the specified element</td>
+                        <td>h1 ~ p { color: green; }</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-------------------------------------Attribute Selectors --------------------------------->
+            <h2>CSS Attribute Selectors</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector Type</th>
+                        <th>Syntax</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Attribute Selector</td>
+                        <td>[attribute]</td>
+                        <td>Selects elements with the specified attribute</td>
+                        <td>[type] { border: 1px solid black; }</td>
+                    </tr>
+                    <tr>
+                        <td>Attribute Selector with Value</td>
+                        <td>[attribute="value"]</td>
+                        <td>Selects elements with the specified attribute value</td>
+                        <td>[type="text"] { width: 200px; }</td>
+                    </tr>
+                    <tr>
+                        <td>Attribute Selector with Contains Value</td>
+                        <td>[attribute*="value"]</td>
+                        <td>Selects elements with an attribute containing the specified value</td>
+                        <td>[class*="button"] { padding: 10px; }</td>
+                    </tr>
+                    <tr>
+                        <td>Attribute Selector with Starts with Value</td>
+                        <td>[attribute^="value"]</td>
+                        <td>Selects elements with an attribute starting with the specified value</td>
+                        <td>[href^="https"] { color: blue; }</td>
+                    </tr>
+                    <tr>
+                        <td>Attribute Selector with Ends with Value</td>
+                        <td>[attribute$="value"]</td>
+                        <td>Selects elements with an attribute ending with the specified value</td>
+                        <td>[src$=".jpg"] { border: 1px solid black; }</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Grouping Selectors -->
+            <h2>CSS Grouping Selectors</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Selector Type</th>
+                        <th>Syntax</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Universal Selector</td>
+                        <td>*</td>
+                        <td>Selects all elements in the document</td>
+                        <td>* { margin: 0; }</td>
+                    </tr>
+                    <tr>
+                        <td>Type Selector</td>
+                        <td>element</td>
+                        <td>Selects all elements of the specified type</td>
+                        <td>p { color: blue; }</td>
+                    </tr>
+                    <tr>
+                        <td>Class Selector</td>
+                        <td>.class</td>
+                        <td>Selects all elements with the specified class</td>
+                        <td>.intro { font-size: 14px; }</td>
+                    </tr>
+                    <tr>
+                        <td>ID Selector</td>
+                        <td>#id</td>
+                        <td>Selects the element with the specified ID</td>
+                        <td>#header { background: yellow; }</td>
+                    </tr>
+                    <tr>
+                        <td>Attribute Selector</td>
+                        <td>[attribute]</td>
+                        <td>Selects elements with the specified attribute</td>
+                        <td>[type="text"] { width: 200px; }</td>
+                    </tr>
+                    <tr>
+                        <td>Grouping Selector</td>
+                        <td>selector1, selector2</td>
+                        <td>Selects all elements matching any of the specified selectors</td>
+                        <td>h1, h2 { font-family: Arial; }</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

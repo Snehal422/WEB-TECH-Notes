@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/common.css">
+    <style>
+        /* CSS for the paragraph */
+        p {
+            width: 70%;
+            margin: 10px auto;
+            font-family: "Kanit", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            text-align: justify;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!-- Moved the h1 tag outside of the p tag -->
+            <h1>HTML Form</h1>
+            <!-- Corrected the structure, h1 should not be inside a p tag -->
+            <p>
+                HTML forms are used to take user input. To provide a form, we use the <code>&lt;form&gt;</code> tag.
+                <code>&lt;form&gt;</code> has two attributes:
+            </p>
+            <!-- Removed center class from ol as it's not valid -->
+            <ol class="center">
+                <li class="align-left">Action</li>
+                <li class="align-left">Method</li>
+            </ol>
+            <h2>Action Attribute</h2>
+            <p>It is used to provide the server reference to which data has to be sent.</p>
+            <h2>Method Attribute</h2>
+            <p>Method attribute is used to provide the way in which data has to be sent. There are two types of methods in HTML:</p>
+            <ol class="center">
+                <li class="align-left">GET</li>
+                <li class="align-left" >POST</li>
+            </ol>
+            <h2>GET</h2>
+            <ol class="center">
+                <li class="align-left">Using GET Method data will be exposed in the url</li>
+                <li class="align-left">It is one of the insecure way to transfer data like username and password</li>
+                
+            </ol>
+            <h2>POST</h2>
+            <ol class="center">
+                <li class="align-left">It is a secure way to transfer data like username and password</li>    
+            </ol>
+
+            <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <h2>FORM Elements</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                
+                    <tr>
+                        <td>&lt;form&gt;</td>
+                        <td>Container for all the form elements. Attributes: <code>action</code>, <code>method</code>, <code>enctype</code>.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input&gt;</td>
+                        <td>Versatile element used for various types of user inputs.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="text"</td>
+                        <td>Single-line text input.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="password"</td>
+                        <td>Single-line text input where characters are masked.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="submit"</td>
+                        <td>Button that submits the form.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="reset"</td>
+                        <td>Button that resets the form to its initial state.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="button"</td>
+                        <td>Generic button that can be programmed with JavaScript.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="checkbox"</td>
+                        <td>Checkbox that allows for multiple selections.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="radio"</td>
+                        <td>Radio button that allows for a single selection within a group.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="file"</td>
+                        <td>Input for file uploads.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="hidden"</td>
+                        <td>Invisible input used to pass data without displaying it.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="image"</td>
+                        <td>Submit button that uses an image as the button.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="date"</td>
+                        <td>Input for selecting a date.</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;type="email"</td>
+                        <td>Input for email addresses.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;textarea&gt;</td>
+                        <td>Multi-line text input.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;select&gt;</td>
+                        <td>Drop-down list. Contains &lt;option&gt; elements.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;option&gt;</td>
+                        <td>Defines an option in a drop-down list.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;button&gt;</td>
+                        <td>Clickable button. Can be used as a submit, reset, or button element.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;label&gt;</td>
+                        <td>Label for an input element. Increases accessibility.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;fieldset&gt;</td>
+                        <td>Groups related elements within a form.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;legend&gt;</td>
+                        <td>Caption for a &lt;fieldset&gt;.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;datalist&gt;</td>
+                        <td>Provides an autocomplete feature for input elements.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;keygen&gt; <small>(Deprecated)</small></td>
+                        <td>Provides a secure way to authenticate users.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;output&gt;</td>
+                        <td>Represents the result of a calculation or user action.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;progress&gt;</td>
+                        <td>Displays progress of a task.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;meter&gt;</td>
+                        <td>Represents a scalar measurement within a known range, or a fractional value.</td>
+                    </tr>
+                
+            </table>
+
+
+            <h2>Attributes</h2>
+            
+<table>
+    <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>type</td>
+            <td>Specifies the type of input control to display. Common values include <code>text</code>, <code>password</code>, <code>submit</code>, <code>reset</code>, <code>button</code>, <code>checkbox</code>, <code>radio</code>, <code>file</code>, <code>hidden</code>, <code>image</code>, <code>date</code>, <code>email</code>, etc.</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>Name of the input field. Used to reference form data after a form is submitted.</td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>Specifies the initial value of the input field.</td>
+        </tr>
+        <tr>
+            <td>placeholder</td>
+            <td>Provides a hint to the user of what can be entered in the input field.</td>
+        </tr>
+        <tr>
+            <td>required</td>
+            <td>A boolean attribute that specifies that the user must fill in a value before submitting the form.</td>
+        </tr>
+        <tr>
+            <td>readonly</td>
+            <td>Specifies that the input field is read-only.</td>
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td>Specifies that the input field is disabled.</td>
+        </tr>
+        <tr>
+            <td>maxlength</td>
+            <td>Specifies the maximum number of characters allowed in the input field.</td>
+        </tr>
+        <tr>
+            <td>minlength</td>
+            <td>Specifies the minimum number of characters allowed in the input field.</td>
+        </tr>
+        <tr>
+            <td>min</td>
+            <td>Specifies the minimum value for <code>number</code>, <code>range</code>, <code>date</code>, <code>datetime-local</code>, <code>month</code>, <code>time</code>, and <code>week</code> input types.</td>
+        </tr>
+        <tr>
+            <td>max</td>
+            <td>Specifies the maximum value for <code>number</code>, <code>range</code>, <code>date</code>, <code>datetime-local</code>, <code>month</code>, <code>time</code>, and <code>week</code> input types.</td>
+        </tr>
+        <tr>
+            <td>step</td>
+            <td>Specifies the legal number intervals for <code>number</code>, <code>range</code>, <code>date</code>, <code>datetime-local</code>, <code>month</code>, <code>time</code>, and <code>week</code> input types.</td>
+        </tr>
+        <tr>
+            <td>pattern</td>
+            <td>Specifies a regular expression that the input field's value is checked against.</td>
+        </tr>
+        <tr>
+            <td>autofocus</td>
+            <td>Specifies that the input field should automatically get focus when the page loads.</td>
+        </tr>
+        <tr>
+            <td>autocomplete</td>
+            <td>Specifies whether an input field should have autocomplete enabled.</td>
+        </tr>
+        <tr>
+            <td>form</td>
+            <td>Specifies the form the input element belongs to.</td>
+        </tr>
+        <tr>
+            <td>list</td>
+            <td>Refers to a <code>&lt;datalist&gt;</code> element that contains pre-defined options for the input field.</td>
+        </tr>
+        <tr>
+            <td>size</td>
+            <td>Specifies the width (in characters) of the input field.</td>
+        </tr>
+        <tr>
+            <td>multiple</td>
+            <td>A boolean attribute that specifies that the user can enter more than one value (for <code>email</code> and <code>file</code> input types).</td>
+        </tr>
+        <tr>
+            <td>accept</td>
+            <td>Specifies the types of files that the server accepts (only for <code>file</code> input type).</td>
+        </tr>
+        <tr>
+            <td>alt</td>
+            <td>Specifies an alternate text for images (only for <code>image</code> input type).</td>
+        </tr>
+        <tr>
+            <td>src</td>
+            <td>Specifies the URL of the image to be used (only for <code>image</code> input type).</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>Specifies the height of the input element (only for <code>image</code> input type).</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>Specifies the width of the input element (only for <code>image</code> input type).</td>
+        </tr>
+    </tbody>
+</table>
+            <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        </div>
+    </main>
+</body>
+
+</html>
+        

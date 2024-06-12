@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/common.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <img class="center" src="./images/CSSsyntax.PNG" alt="">
+            <p>The selector points to the HTML element you want to style.
+                The declaration block contains one or more declarations separated by
+                semicolons.
+                Each declaration includes a CSS property name and a value, separated by a
+                colon.
+                Multiple CSS declarations are separated with semicolons, and declaration
+                blocks are surrounded by curly braces.</p>
+            <h2>IMPLEMENTATION OF CSS</h2>
+            <p>There are three ways of inserting a style sheet:</p>
+            <ol class="center">
+                <li class="align-left">Inline CSS</li>
+                <li class="align-left">Internal CSS</li>
+                <li class="align-left">External CSS</li>
+            </ol>
+
+            <h2>Inline CSS</h2>
+            <p>An inline style may be used to apply a unique style for a single element.
+                To use inline styles, add the style attribute to the relevant element. The style
+                attribute can contain any CSS property. <br>
+                Syntax: &lt;h1 style=&quot;color:blue;text-align:center;&quot;&gt;This is a heading&lt;/h1&gt;
+            </p>
+            <h2>Internal CSS</h2>
+            <p>An internal style sheet may be used if one single HTML page has a unique
+                style.
+                The internal style is defined inside the &lt;style&gt; element, inside the head
+                section.</p>
+            <p> &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                body {<br>
+                &nbsp;&nbsp;background-color: linen;<br>
+                }<br>
+                <br>
+                h1 {<br>
+                &nbsp;&nbsp;color: maroon;<br>
+                &nbsp;&nbsp;margin-left: 40px;<br>
+                }<br>
+                &lt;/style&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                <br>
+                &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                <br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </p>
+            <h2>External CSS</h2>
+            <p>With an external style sheet, you can change the look of an entire website by
+                changing just one file!
+                Each HTML page must include a reference to the external style sheet file
+                inside the &lt;link&gt; element, inside the head section.</p>
+            <p>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;mystyle.css&quot;&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                <br>
+                &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                <br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </p>
+
+            <p>NOTE: THE FIRST PRIORITY ALWAYS GOES TO INLINE CSS.
+                BUT WE CAN SET THE PRIORITY WITH HELP OF !important KEYWORD.</p>
+
+                <img class="center" src="./images/cssimplementation.PNG" alt="">
+
+        </div>
+    </main>
+</body>
+
+</html>
